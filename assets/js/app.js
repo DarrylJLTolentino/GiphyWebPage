@@ -75,6 +75,7 @@ $("#intro-video").on("click", function () {
         var video = $("#intro-video");
         video[0].load();
         video[0].play();
+        $("h1").addClass('d-none')
         // $("#intro-video").addClass("d-none");
         $('#intro-video').on('ended',function(){
             console.log('Video has ended!');

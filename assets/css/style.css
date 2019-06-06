@@ -15,6 +15,12 @@ body {
     min-height: 100%;
 }
 
+h1 {
+    position: relative;
+    color: white;
+    z-index: 3;
+}
+
 form {
     position: absolute;
     bottom: 50px;
@@ -60,6 +66,16 @@ form {
     position: absolute;
     color: white;
     left: 10px;
+}
+
+#info {
+    position: absolute;
+    top: 15.61%;
+    right: 20%;
+    height: 200px;
+    width: 300px;
+    color: white;
+    font-size: 14px;
 }
 
 #topic-view {
