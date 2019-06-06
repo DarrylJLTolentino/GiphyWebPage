@@ -77,6 +77,8 @@ $("#intro-video").on("click", function () {
             // $("#intro-video").css('z-index', 2);
             $("#intro-video").addClass("d-none");
             $("#body").css('background-image', 'url(assets/media/images/introvideo-image.png)');
+            $("#topic-form").removeClass("d-none");
+            $("#topic-view").removeClass("d-none");
         })
     }
 })
