@@ -35,6 +35,10 @@ function displayTopicInfo() {
         console.log(results);
         for (var i = 0; i < 10; i++) {
             var topicDiv = $("<div>");
+            var ratingDiv = $("<p>");
+            ratingDiv.addClass("rating");
+            ratingDiv.text("Rating: " + results[i].rating);
+            topicDiv.append(ratingDiv);
             var topicImage = $("<img>");
             topicImage.addClass("gif");
             topicImage.attr('src', results[i].images.fixed_height_still.url);
