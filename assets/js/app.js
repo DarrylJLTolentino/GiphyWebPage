@@ -1,3 +1,5 @@
+var isVideoClicked = false;
+
 var topics = ["monsterhunter", "finalfantasy", "streetfighter"];
 
 function renderTopicButtons() {
@@ -45,7 +47,7 @@ function displayTopicInfo() {
     })
 }
 
-$(document).on("click", ".gif", function() {
+$(document).on("click", ".gif", function () {
     var state = $(this).attr("data-state");
     console.log(state);
 
@@ -61,5 +63,19 @@ $(document).on("click", ".gif", function() {
 
 
 $(document).on("click", ".topic", displayTopicInfo);
+
+$("#intro-video").on("click", function () {
+    if (isVideoClicked !== true) {
+        isVideoClicked = true;
+        var video = $("#intro-video");
+        video[0].load();
+        video[0].play();
+        // $("#intro-video").addClass("d-none");
+        $('#intro-video').on('ended',function(){
+            console.log('Video has ended!');
+            $("#intro-video").css('z-index', -1);
+        })
+    }
+})
 
 renderTopicButtons();
