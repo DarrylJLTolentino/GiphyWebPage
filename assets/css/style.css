@@ -22,17 +22,37 @@ form {
     z-index: 2;
 }
 
+.wrapper{
+    position: absolute;
+    overflow: hidden;
+    top: 13.61%;
+    left: 8.72%;
+    z-index: 0;
+    height: 333px;
+    width: 1405px;
+}
+
 #gifs {
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px;
+    /* overflow: auto; */
+}
+/* #gifs {
     position: absolute;
     top: 13.61%;
     left: 8.72%;
     z-index: 0;
-    height: 348px;
-    width: 615px;
-    overflow: scroll;
-}
+    height: 333px;
+    width: 1405px;
+    overflow-y: scroll;
+    /* overflow: auto;
+} */
 .gif {
-    height: 329px;
+    height: 100%;
     width: 594.5px;
 }
 
