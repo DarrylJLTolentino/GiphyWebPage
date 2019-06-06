@@ -1,7 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-size: 100%;
+    z-index: 1;
+}
+
 #intro-video {
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+form {
+    position: absolute;
+    bottom: 50px;
+    left: 44.5%;
+    z-index: 2;
+}
+
+#gifs {
+    position: absolute;
+    top: 13.61%;
+    left: 8.72%;
+    z-index: 0;
+    height: 330px;
+    width: 615px;
+    overflow: scroll;
+}
+.gif {
+    height: 326px;
+    width: 587px;
+}
+
+#topic-view {
+    position: fixed;
+    bottom: 178px;
+    left: 132px;
+    width: 83%;
+    background-color: black;
+    z-index: 2;
+}
+
+#add-topic {
+    position: absolute;
+    bottom: -30%;
+    left: 20.5%;
+    z-index: 2;
+}
+
+button {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
