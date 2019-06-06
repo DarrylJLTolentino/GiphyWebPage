@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: FinalFantasyXV;
+    src: url(../fonts/ITC\ Avant\ Garde\ Gothic\ Medium.otf);
+}
+
 body {
     background-size: 100%;
     z-index: 1;
@@ -17,8 +22,10 @@ body {
 
 h1 {
     position: relative;
+    top: 25px;
     color: white;
     z-index: 3;
+    font-family: FinalFantasyXV;
 }
 
 form {
@@ -66,6 +73,7 @@ form {
     position: absolute;
     color: white;
     left: 10px;
+    font-family: FinalFantasyXV;
 }
 
 #info {
@@ -76,6 +84,7 @@ form {
     width: 300px;
     color: white;
     font-size: 14px;
+    font-family: FinalFantasyXV;
 }
 
 #topic-view {
@@ -97,4 +106,5 @@ form {
 button {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: FinalFantasyXV;
 }
