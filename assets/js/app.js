@@ -10,6 +10,7 @@ function renderTopicButtons() {
         newButton.attr("data-topic", topics[i])
         newButton.text(topics[i]);
         $("#topic-view").append(newButton);
+        $("#topic-view").append(" ");
     }
 }
 
@@ -42,7 +43,7 @@ function displayTopicInfo() {
             topicImage.attr('data-state', "still");
             topicDiv.append(topicImage);
             $("#gifs").append(topicDiv);
-            $("#gifs").append("<br>");
+            // $("#gifs").append("<br>");
         }
     })
 }
@@ -73,7 +74,9 @@ $("#intro-video").on("click", function () {
         // $("#intro-video").addClass("d-none");
         $('#intro-video').on('ended',function(){
             console.log('Video has ended!');
-            $("#intro-video").css('z-index', -1);
+            // $("#intro-video").css('z-index', 2);
+            $("#intro-video").addClass("d-none");
+            $("#body").css('background-image', 'url(assets/media/images/introvideo-image.png)');
         })
     }
 })
