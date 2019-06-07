@@ -71,7 +71,7 @@ form {
 
 .rating {
     position: absolute;
-    color: white;
+    color: blue;
     left: 10px;
     font-family: FinalFantasyXV;
 }
@@ -80,11 +80,12 @@ form {
     position: absolute;
     top: 15.61%;
     right: 20%;
-    height: 200px;
+    height: 285px;
     width: 300px;
     color: white;
     font-size: 14px;
     font-family: FinalFantasyXV;
+    background-color: black;
 }
 
 #topic-view {
