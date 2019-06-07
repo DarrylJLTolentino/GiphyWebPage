@@ -84,6 +84,7 @@ $("#intro-video").on("click", function () {
             $("#body").css('background-image', 'url(assets/media/images/introvideo-image.png)');
             $("#topic-form").removeClass("d-none");
             $("#topic-view").removeClass("d-none");
+            $("#info").removeClass("d-none");
         })
     }
 })
